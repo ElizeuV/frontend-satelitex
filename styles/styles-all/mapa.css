@@ -1,0 +1,17 @@
+/*MAPA*/
+.mapa__informacoes {
+    text-align: center;
+    padding: 2%;
+}
+
+.mapa__titulo, .mapa__texto {
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1%;
+}
+
+.mapa__conteudo {
+    padding: 0 2%;
+}

@@ -1,0 +1,25 @@
+/*SESSAO MISTA*/
+.sessao__mista__lista__divisao__um {
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.sessao__mista__imagem {
+    width: 100%;
+}
+
+.sessao__mista__lista__divisao__um__item {
+    padding: 1%;
+    align-items: center;
+}
+
+.sessao__mista__lista__divisao__um__item__texto {
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    padding: 2%;
+}
+

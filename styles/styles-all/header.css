@@ -1,0 +1,27 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 3%;
+}
+
+.cabecalho__titulo__link {
+    text-decoration: none;
+    font-family: var(--font--terciaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__navegacao__lista {
+    display: flex;
+    gap: 10%;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.cabecalho__navegacao__item__link {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+}
