@@ -1,6 +1,6 @@
 /*TODAS CATEGORIAS*/
 .todas__categorias {
-    padding: 0 3% 3% 3%;
+    padding: 3% 3% 3% 3%;
 }
 
 .todas__categorias__lista {
@@ -8,7 +8,7 @@
     justify-content: center;
     gap: 5%;
     list-style: none;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
 }
 
 .todas__categorias__lista__link {
