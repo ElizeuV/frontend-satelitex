@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap=Blaka+Hollow&display=swap=Blaka+Hollow&family=Montserrat+Subrayada&display=swap');
+
+
+:root {
+    /*variáveis css*/
+    
+    /*primaria*/
+    /*https://colorhunt.co/*/
+    --cor-principal: #0F0E0E;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font--terciaria: 'Montserrat Subrayada', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
