@@ -19,4 +19,5 @@
 
 .todas__categorias__lista__link:hover {
     font-size: 20px;
+    color: var(--cor-terciaria);
 }

@@ -6,11 +6,12 @@
 
 /*SESSAO MISTA*/
 .sessao__eletronicos__lista__divisao__um {
-    padding: 0 20%;
+    padding: 2% 20%;;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     list-style: none;
+    background-color: var(--cor-secundaria);
 }
 
 .sessao__eletronicos__imagem {
@@ -24,7 +25,7 @@
 
 .sessao__eletronicos__lista__divisao__um__item__texto {
     text-align: center;
-    color: var(--cor-secundaria);
+    color: var(--cor-principal);
     font-family: var(--font-secundaria);
     padding: 2%;
 }

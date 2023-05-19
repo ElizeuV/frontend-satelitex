@@ -15,10 +15,6 @@
     font-size: 30px;
 }
 
-/* .cabecalho__titulo__link:active{
-    font-size: 50px;
-} */
-
 .cabecalho__navegacao__lista {
     display: flex;
     gap: 10%;
@@ -32,9 +28,3 @@
     font-family: var(--font-secundaria);
     font-size: 1.5rem;
 }
-
-/* .cabecalho__navegacao__item__link:hover {
-    color: var(--cor-secundaria);
-    font-weight: bold;
-    font-size: 30px;
-} */
