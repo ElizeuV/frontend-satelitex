@@ -7,6 +7,7 @@
     padding: 1%;
     color: var(--cor-principal);
     font-size: 14px;
+    font-weight: 600;
     font-family: var(--font-secundaria);
     text-align: center;
 }

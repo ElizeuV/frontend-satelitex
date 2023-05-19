@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     background-color: #fff;
     border-radius: 7px;
-    padding: 40px;
+    padding: 35px;
     box-shadow: 10px 10px 40px var( --cor-principal);
     gap: 5px
 }

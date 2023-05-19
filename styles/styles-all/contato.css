@@ -14,12 +14,14 @@
 .contato__texto {
     color: var( --cor-secundaria);
     text-align: center;
+    padding: 5px;
 }
 
 .contato__titulo {
     font-size: 18px;
     font-weight: 500;
     font-family: var(--font-secundaria);
+
 }
 
 .contato__texto {

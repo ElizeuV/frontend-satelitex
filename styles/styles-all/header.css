@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 25%;
     padding: 3%;
     flex-wrap: wrap;
     background-color: var(--cor-secundaria);  
@@ -12,6 +12,7 @@
     text-decoration: none;
     font-family: var( --font-logo);
     color: var(--cor-principal);
+    font-size: 30px;
 }
 
 /* .cabecalho__titulo__link:active{
