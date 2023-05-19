@@ -14,7 +14,7 @@ body {
     align-content: center;
     justify-content: center;
     padding: 5%;
-    background-color: #0F0E0E;
+    background-color: var(--cor-principal);
 }
 
 .formLogin {
@@ -23,7 +23,7 @@ body {
     background-color: #fff;
     border-radius: 7px;
     padding: 40px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 40px var( --cor-principal);
     gap: 5px
 }
 
@@ -58,7 +58,7 @@ body {
 
 
 .formLogin input:focus {
-    border: 1px solid #f72585;
+    border: 1px solid #22d4fd;
 }
 
 .formLogin label {
@@ -75,7 +75,7 @@ body {
 }
 
 .formLogin a:hover {
-    color: #f72585;
+    color: #22d4fd;
 }
 
 .btn {

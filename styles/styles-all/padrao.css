@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap=Blaka+Hollow&display=swap=Blaka+Hollow&family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap=Blaka+Hollow&display=swap=Blaka+Hollow&family=Montserrat+Subrayada&display=swap=Abril+Fatface&display=swap');
 
 
 :root {
@@ -14,6 +14,7 @@
     --fonte-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
     --font--terciaria: 'Montserrat Subrayada', sans-serif;
+    --font-logo:'Abril Fatface', cursive;
 }
 
 * {

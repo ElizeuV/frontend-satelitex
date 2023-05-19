@@ -1,7 +1,7 @@
 /*MAPA*/
 .mapa__informacoes {
     text-align: center;
-    padding: 2%;
+    padding: 1%;
 }
 
 .mapa__titulo, .mapa__texto {
@@ -13,5 +13,10 @@
 }
 
 .mapa__conteudo {
-    padding: 0 2% 2% 2%;
+    padding: 2% 5%;
+ 
+}
+
+.mapa-frame {
+    border-radius: 1.5em;
 }
