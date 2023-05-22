@@ -11,3 +11,31 @@
     font-family: var(--font-secundaria);
     text-align: center;
 }
+
+.titulo__redes-sociais{
+    color: var(--cor-principal);
+    font-size: 25px;
+    font-family: var(--font-secundaria);
+}
+
+.lista__redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 4% 2%;
+    /* background-color: var(--cor-principal); */
+}
+
+.link__redes-sociais{
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-family: var(--font-secundaria);
+}
+
+
+.instagram {
+    background: url(../../assets/) no-repeat;
+ 
+}
