@@ -19,16 +19,12 @@
     font-family: var(--font-secundaria);
     padding: 2% 2% 0.5% 2%;
     border-bottom: var(--cor-principal) 2px dashed;
-
-  
-
 }
 
 .lista__redes-sociais{
     display: flex;
     gap: 30px;
     align-items: center;
-  
     padding: 3% 3%;
     /* background-color: var(--cor-principal); */
 }
@@ -40,11 +36,9 @@
     padding: 2%;
 }
 
-
 .instagram {
     background: url(../../assets/instagram.png) no-repeat;
     padding-left: 27px;
- 
 }
 
 .facebook {
