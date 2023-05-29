@@ -20,7 +20,7 @@
 .sessao__mista__lista__divisao__um__item {
     padding: 2%;
     align-items: center;
-    border-top: var(--cor-principal) solid 2px;
+    border-top: var(--cor-principal) solid 1px;
 }
 
 .sessao__mista__lista__divisao__um__item__texto {
