@@ -1,30 +1,35 @@
 .rodape {
-    padding: 2%;
+
     background-color:  var(--cor-secundaria);  
 }
 
 .rodape__texto {
-    padding: 1%;
-    color: var(--cor-principal);
-    font-size: 14px;
+    padding: 4%;
+    color: var(--cor-secundaria);
+    font-size: 20px;
     font-weight: 600;
     font-family: var(--font-secundaria);
     text-align: center;
+    background-color: var(--cor-principal);
 }
 
 .titulo__redes-sociais{
     color: var(--cor-principal);
     font-size: 25px;
     font-family: var(--font-secundaria);
+    padding: 2% 2% 0.5% 2%;
+    border-bottom: var(--cor-principal) 2px dashed;
+
+  
+
 }
 
 .lista__redes-sociais{
     display: flex;
-    justify-content: center;
+    gap: 30px;
     align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    padding: 4% 2%;
+  
+    padding: 3% 3%;
     /* background-color: var(--cor-principal); */
 }
 
@@ -32,10 +37,29 @@
     text-decoration: none;
     color: var(--cor-principal);
     font-family: var(--font-secundaria);
+    padding: 2%;
 }
 
 
 .instagram {
-    background: url(../../assets/) no-repeat;
+    background: url(../../assets/instagram.png) no-repeat;
+    padding-left: 27px;
  
 }
+
+.facebook {
+    background: url(../../assets/facebook.png) no-repeat;
+    padding-left: 27px;   
+}
+
+.wats {
+    background: url(../../assets/whatsapp.png) no-repeat;
+    padding-left: 27px;   
+}
+
+.linkedin {
+    background: url(../../assets/linkedin.png) no-repeat;
+     padding-left: 27px;   
+}
+
+

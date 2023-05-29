@@ -6,7 +6,7 @@
 .todas__categorias__lista {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    justify-content: space-evenly;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -15,6 +15,7 @@
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
     text-decoration: none;
+ 
 }
 
 .todas__categorias__lista__link:hover {
