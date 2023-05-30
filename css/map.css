@@ -1,11 +1,10 @@
 .map {
   background-color: var(--cor-principal);
-  padding: 0 2%;
+
 }
 
 .map_info {
   text-align: center;
-  padding: 1%;
 }
 
 .map_info h3, p {
@@ -17,11 +16,11 @@
 }
 
 .map_frame {
-  padding: 1% 0;
+  /* padding: 1% 0; */
 }
 
 .map_frame iframe {
-  border-radius: 1.5em;
+  /* border-radius: 1.5em; */
 }
 
 @media screen and (max-width: 580px) {
