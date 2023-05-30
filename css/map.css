@@ -1,0 +1,37 @@
+.map {
+  background-color: var(--cor-principal);
+  padding: 0 2%;
+}
+
+.map_info {
+  text-align: center;
+  padding: 1%;
+}
+
+.map_info h3, p {
+  color: var(--cor-secundaria);
+  font-family: var(--font-secundaria);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
+.map_frame {
+  padding: 1% 0;
+}
+
+.map_frame iframe {
+  border-radius: 1.5em;
+}
+
+@media screen and (max-width: 580px) {
+  .map_frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map_frame iframe {
+    width: 80%;
+  }
+}

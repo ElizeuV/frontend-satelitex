@@ -1,0 +1,26 @@
+.content {
+  padding: 2% 20%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: var(--cor-secundaria);
+}
+
+.content_item {
+  padding: 2%;
+  align-items: center;
+  border-top: var(--cor-principal) solid 1px;
+}
+
+.content_item img {
+  width: 100%;
+}
+
+.content_item p {
+  text-align: center;
+  color: var(--cor-principal);
+  font-family: var(--font-secundaria);
+  padding: 2%;
+  font-size: 16px;
+}

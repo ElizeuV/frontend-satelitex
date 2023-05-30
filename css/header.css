@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3% 0;
+  flex-wrap: wrap;
+  background-color: var(--cor-secundaria);
+}
+
+.button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; 
+}
+
+.header_title a {
+  text-decoration: none;
+  font-family: var(--font-logo);
+  color: var(--cor-principal);
+  font-size: 30px;
+}
+
+.header_navigation ul {
+  display: flex;
+  gap: 25%;
+  list-style: none;
+  justify-content: space-evenly;
+  white-space: nowrap;
+  /*evita a quebra de linha*/
+  align-items: center;
+  width: 100%;
+}
+
+.header_navigation_item a {
+  display: flex;
+  text-decoration: none;
+  color: var(--cor-principal);
+  font-family: var(--font-secundaria);
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.lista_desejo {
+  background: url(../images/sacola-de-compra.png) no-repeat;
+  padding-left: 27px;
+}
+
+.entrar {
+  background: url(../images/usuario.png) no-repeat;
+  padding-left: 27px;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 15vh;
+    flex-direction: column;
+    gap: 10%;
+    border-bottom: var(--cor-principal) solid 10px;
+    position: relative;
+  }
+
+  .button {
+    display: block;
+  }
+
+  .button_open {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  .button_close {
+    color: var(--cor-secundaria);
+    position: absolute;
+    top: 5%;
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header {
+    height: 20vh;
+  }
+
+  .header_navigation ul {
+    flex-direction: column;
+  }
+
+  .header_navigation_item {
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .button {
+    transform: scale(0.7);
+  }
+}
+
+/*https://www.flaticon.com/br/icon-fonts-mas-baixados/20*/

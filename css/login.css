@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #023047;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 6%;
+  background-color: var(--cor-principal);
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 35px;
+  box-shadow: 10px 10px 40px var( --cor-principal);
+  gap: 5px
+}
+
+.login_form h1 {
+  font-weight: 500;
+  font-size: 2.3em;
+}
+
+.login_form p {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.login_form input {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  outline: none;
+}
+
+
+.login_form input:focus {
+  border: 1px solid #22d4fd;
+}
+
+.login_form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login_form a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #555;
+  transition: all linear 160ms;
+}
+
+.login_form a:hover {
+  color: #22d4fd;
+}
+
+.login_form button {
+  background-color: #22d4fd;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+  padding: 1rem;
+}
+
+.login_form button:hover {
+  transform: scale(1.05);
+  background-color: #ff0676;
+}
