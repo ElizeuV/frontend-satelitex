@@ -48,7 +48,6 @@ body {
   outline: none;
 }
 
-
 .login_form input:focus {
   border: 1px solid #22d4fd;
 }
