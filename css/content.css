@@ -8,9 +8,11 @@
 }
 
 .content_item {
-  padding: 2%;
+  padding: 4% 0;
   align-items: center;
   border-top: var(--cor-principal) solid 1px;
+  font-family: var(--font-secundaria);
+  font-weight: 600;
 }
 
 .content_item img {
