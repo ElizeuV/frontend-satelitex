@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 3% 0;
   flex-wrap: wrap;
   background-color: var(--cor-secundaria);
@@ -53,11 +53,13 @@
 
 @media screen and (max-width: 900px) {
   .header {
-    height: 15vh;
+    height: 30vh;
     flex-direction: column;
     gap: 10%;
     border-bottom: var(--cor-principal) solid 10px;
     position: relative;
+    padding: 0;
+    justify-content: center;
   }
 
   .button {
@@ -80,7 +82,12 @@
 
 @media screen and (max-width: 580px) {
   .header {
-    height: 20vh;
+    height: 35vh;
+    gap: 0;
+  }
+
+  .header_title a img {
+    width: 80%;
   }
 
   .header_navigation ul {
@@ -88,13 +95,25 @@
   }
 
   .header_navigation_item {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
   }
 }
 
 @media screen and (max-width: 380px) {
+  .header {
+    gap: 5%;
+  }
+
   .button {
     transform: scale(0.7);
+  }
+
+  .header_title a img {
+    width: 60%;
+  }
+
+  .header_navigation_item a {
+    /* font-size: 1.2rem; */
   }
 }
 
