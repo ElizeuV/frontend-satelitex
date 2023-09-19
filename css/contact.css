@@ -35,7 +35,7 @@
   width: 40%;
   color: var( --cor-principal);
   height: 40px;
-  padding-left: 1em;
+  padding-left: 1rem;
 }
 
 .contact input::placeholder {

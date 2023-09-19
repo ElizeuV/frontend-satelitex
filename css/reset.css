@@ -5,6 +5,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap=Blaka+Hollow&display=swap=Blaka+Hollow&family=Montserrat+Subrayada&display=swap=Abril+Fatface&display=swap');
 
+@font-face {
+  font-family: Chiller;
+  src: url(../font/CHILLER.TTF);
+}
 
 html,
 body,
