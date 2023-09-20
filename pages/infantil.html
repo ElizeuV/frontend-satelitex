@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script defer src="../js/script.js"></script>
+    <script type="module" defer src="../js/produtos/infantil.js"></script>
 </head>
 
 <body>
@@ -29,9 +32,9 @@
             </svg>
         </button>
 
-        <h1 class="header_title">
-            <img src="../images/logo.png" alt="Logo">
-        </h1>
+        <a href="/" class="header_title">
+          <img src="../images/logo_ico.png" alt="Logo">
+        </a>
 
         <nav class="header_navigation">
             <ul>
@@ -54,73 +57,49 @@
         </nav>
     </header>
 
-    <main>
-        <section class="categories">
+    <main tabindex="0" onclick="closeNavbar()">
+        <section class="categories" id="categories">
             <nav>
-                <ul class="categories_list">
-                    <li>
-                        <button onclick="toggleNavbar()" class="button button_close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-x" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                            </svg>
-                        </button>
-                    </li>
-
-                    <li>
-                        <a class="categories_list_link" href="../index.html">Todas Categorias</a>
-                    </li>
-
-                    <li>
-                        <a class="categories_list_link" href="feminino.html">Feminino</a>
-                    </li>
-
-                    <li>
-                        <a class="categories_list_link" href="masculino.html">Masculino</a>
-                    </li>
-
-                    <li>
-                        <a class="categories_list_link" href="infantil.html">Infantil</a>
-                    </li>
-
-                    <li>
-                        <a class="categories_list_link" href="calçados.html">Calçados</a>
-                    </li>
-
-                    <li>
-                        <a class="categories_list_link" href="eletronicos.html">Eletrônicos</a>
-                    </li>
-
-                    <li>
-                        <a class="categories_list_link" href="promocoes.html">Promoções</a>
-                    </li>
-                </ul>
+              <ul class="categories_list">
+                <li>
+                  <button onclick="toggleNavbar()" class="button button_close">
+                    X
+                  </button>
+                </li>
+      
+                <li>
+                  <a class="categories_list_link" href="../index.html">Todas Categorias</a>
+                </li>
+      
+                <li>
+                  <a class="categories_list_link" href="./feminino.html">Feminino</a>
+                </li>
+      
+                <li>
+                  <a class="categories_list_link" href="./masculino.html">Masculino</a>
+                </li>
+      
+                <li>
+                  <a class="categories_list_link" href="./infantil.html">Infantil</a>
+                </li>
+      
+                <li>
+                  <a class="categories_list_link" href="./calcados.html">Calçados</a>
+                </li>
+      
+                <li>
+                  <a class="categories_list_link" href="./eletronicos.html">Eletrônicos</a>
+                </li>
+      
+                <li>
+                  <a class="categories_list_link" href="./promocoes.html">Promoções</a>
+                </li>
+              </ul>
             </nav>
-        </section>
+          </section>
 
         <section>
-            <ul>
-                <div class="content">
-                    <li class="content_item">
-                        <img src="../images/produtos/AdidasFemininoVermelho.png" alt="Tenis Adidas">
-                        <p>TÊNIS ADIDAS NMD Feminino</p>
-                        <p>R$ 299,99</p>
-                    </li>
-
-                    <li class="content_item">
-                        <a href="#"><img src="../images/produtos/AdidasFemininoVermelho.png" alt="Gorro Adidas"></a>
-                        <p>Tênis Adidas MID Masculino</p>
-                        <p>R$ 399,99</p>
-                    </li>
-
-                    <li class="content_item">
-                        <img src="../images/produtos/AirJordan.png" alt="Jordan Nike">
-                        <p>Tênis Air Jordan 16 Mid Masculino</p>
-                        <p>R$ 999,99</p>
-                    </li>
-                </div>
-            </ul>
+                <div class="content" id="content"></div>
         </section>
 
         <section class="contact">
@@ -131,6 +110,12 @@
             <input type="email" placeholder="Cadastre seu e-mail">
         </section>
     </main>
+
+    <nav class="nav_bottom">
+      <a href="/" class="nav_bottom_item lista_desejo_bottom"><img src="../images/sacolas-de-compras.png" alt="Favoritos"></a>
+      <a href="/" class="nav_bottom_item favoritos_bottom"><img src="../images/amor.png" alt="Favoritos"></a>
+      <a href="./pages/login.html" class="nav_bottom_item login_bottom"><img src="../images/novo-usuario.png" alt="Favoritos"></a>
+    </nav>
 
     <footer>
         <div class="container-footer">

@@ -5,6 +5,10 @@ body {
   color: #023047;
 }
 
+.header_title {
+  position: static;
+}
+
 .login {
   display: flex;
   flex-direction: column;

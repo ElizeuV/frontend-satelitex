@@ -16,12 +16,13 @@
   <link rel="stylesheet" href="css/footer.css">
 
   <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script defer src="js/script.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" defer src="js/produtos/index.js"></script>
 </head>
 
 <body>
@@ -34,9 +35,10 @@
       </svg>
     </button>
 
-    <h1 class="header_title">
-      <img src="./images/logo.png" alt="Logo">
-    </h1>
+    <a href="/" class="header_title">
+      <img src="./images/logo_ico.png" alt="Logo">
+    </a>
+
     <nav class="header_navigation">
       <ul>
         <!-- <li class="header__navegacao__item">
@@ -84,7 +86,7 @@
           </li>
 
           <li>
-            <a class="categories_list_link" href="pages/calçados.html">Calçados</a>
+            <a class="categories_list_link" href="pages/calcados.html">Calçados</a>
           </li>
 
           <li>
@@ -99,27 +101,7 @@
     </section>
 
     <section>
-      <ul>
-        <div class="content">
-          <li class="content_item">
-            <a href="#"><img src="images/produtos/AirJordan.png" alt="Jordan Nike"></a>
-            <p>Tênis Air Jordan 16 Mid Feminino</p>
-            <p>R$ 1599,99</p>
-          </li>
-
-          <li class="content_item">
-            <a href="#"><img src="images/produtos/AdidasFemininoVermelho.png" alt="Gorro Adidas"></a>
-            <p>Tênis Adidas MID Masculino</p>
-            <p>R$ 399,99</p>
-          </li>
-
-          <li class="content_item">
-            <a href="#"><img src="images/produtos/AirJordan.png" alt="Jordan Nike"></a>
-            <p>Tênis Air Jordan 16 Mid Masculino</p>
-            <p>R$ 999,99</p>
-          </li>
-        </div>
-      </ul>
+        <div class="content" id="content"></div>
     </section>
 
     <section class="map">
@@ -147,9 +129,9 @@
   </main>
 
   <nav class="nav_bottom">
-        <a href="/" class="nav_bottom_item lista_desejo_bottom"><img src="images/sacola-de-compra.png" alt="Favoritos"></a>
-        <a href="/" class="nav_bottom_item favoritos_bottom"><img src="images/coracao.png" alt="Favoritos"></a>
-        <a href="/" class="nav_bottom_item login_bottom"><img src="images/usuario.png" alt="Favoritos"></a>
+        <a href="/" class="nav_bottom_item lista_desejo_bottom"><img src="images/sacolas-de-compras.png" alt="Favoritos"></a>
+        <a href="/" class="nav_bottom_item favoritos_bottom"><img src="images/amor.png" alt="Favoritos"></a>
+        <a href="./pages/login.html" class="nav_bottom_item login_bottom"><img src="images/novo-usuario.png" alt="Favoritos"></a>
   </nav>
 
   <footer>

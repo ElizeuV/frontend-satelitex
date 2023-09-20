@@ -109,6 +109,10 @@
     z-index: 2;
     background-color: #262626;
   }
+
+  .nav_bottom_item img {
+    width: 30px;
+  }
 }
 
 @media screen and (max-width: 580px) {
