@@ -1,3 +1,7 @@
+.carousel {
+  background-color: var(--cor-principal);
+}
+
 .content {
   padding: 2rem 8rem;
   display: grid;
