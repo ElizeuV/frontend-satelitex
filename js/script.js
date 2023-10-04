@@ -5,7 +5,7 @@ function toggleNavbar() {
     showNavbar = !showNavbar;
     
     if(showNavbar) {
-        headerNavbar.style.marginLeft = '-0vw';
+        headerNavbar.style.marginLeft = '0vw';
         headerNavbar.style.animationName = 'showNavbar';
     } else {
         headerNavbar.style.marginLeft = '-100vw';

@@ -1,5 +1,10 @@
 .carousel {
   background-color: var(--cor-principal);
+  height: 250px;
+}
+
+.carousel-item {
+  cursor: pointer;
 }
 
 .content {

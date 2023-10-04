@@ -34,6 +34,7 @@ a {
   transform: rotateX(90deg);
   transition: all 0.5s;
   border-radius: 0.5rem;
+  text-decoration: none;
 }
 
 .categories_list_link:hover::before {
@@ -42,6 +43,7 @@ a {
 
 .categories_list_link:hover {
   color: var(--cor-principal);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -59,6 +61,7 @@ a {
     z-index: 3;
     box-shadow: 0.2rem 0.2rem 0.5rem #000000;
     animation-duration: 0.8s;
+    animation-timing-function: linear;
     margin-left: -100vw;
     position: fixed;
   }
@@ -93,11 +96,11 @@ a {
 
   @keyframes showNavbar {
     from {margin-left: -100vw;}
-    to {margin-left: -10vw;}
+    to {margin-left: 0vw;}
   }
 
   @keyframes closeNavbar {
-    from {margin-left: -10vw;}
+    from {margin-left: 0vw;}
     to {margin-left: -100vw;}
   }
 }

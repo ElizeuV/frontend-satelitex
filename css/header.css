@@ -14,12 +14,16 @@
   cursor: pointer; 
 }
 
+.button:focus {
+  border: none;
+  outline: none;
+}
+
 .button_close {
   color: red;
   font-family: Chiller;
   font-size: 50px;
   margin: 0;
-
 }
 
 .header_title img {
@@ -78,6 +82,7 @@
 
   .button {
     display: block;
+    outline: none;
   }
 
   .button_open {
@@ -107,6 +112,11 @@
     width: 100vw;
     z-index: 2;
     background-color: #262626;
+    box-shadow: 0 -1px 8px rgba(255, 255, 255, 0.4);
+  }
+
+  body {
+    padding-bottom: 8vh;
   }
 
   .nav_bottom_item img {
