@@ -2,23 +2,35 @@ const content = document.getElementById('content');
 
 const getProduct = (produto) => {
   const container = document.createElement('div');
-  container.className = 'content_item';
+  container.className = 'card';
+  const imgBox = document.createElement('div');
+  imgBox.className = 'img_box';
+  const contentBox = document.createElement('div');
+  contentBox.className = 'content_box';
   const link = document.createElement('a');
+  link.classList = 'buy';
+  link.href = '#'
   const image = document.createElement('img');
-  const text = document.createElement('p');
-  const price = document.createElement('p');
+  const text = document.createElement('h3');
+  const price = document.createElement('h2');
+  price.className = 'price';
 
   image.src = produto.imagem;
   image.alt = produto.legenda;
   const nome = document.createTextNode(produto.nome);
   const preco = document.createTextNode(`R$ ${produto.preco}`);
+  const buy = document.createTextNode('Compre Agora');
+  link.appendChild(buy);
 
+  imgBox.appendChild(image);
   text.appendChild(nome);
   price.appendChild(preco);
-  container.appendChild(link);
-  link.appendChild(image);
-  link.appendChild(text);
-  link.appendChild(price);
+  contentBox.appendChild(text);
+  contentBox.appendChild(price);
+  contentBox.appendChild(link);
+  container.appendChild(imgBox);
+  container.appendChild(contentBox);
+
 
   return container;
 }

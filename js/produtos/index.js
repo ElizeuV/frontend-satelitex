@@ -14,12 +14,6 @@ const produtos = [
     legenda: 'Adidas Feminino'
   },
   {
-    nome: 'Gorro Minimalista Sólido',
-    preco: 150.99,
-    imagem: './images/produtos/GorroMinimalistaSolido.png',
-    legenda: 'Gorro Minimalista'
-  },
-  {
     nome: 'Nike Vapor 14',
     preco: 250.00,
     imagem: './images/produtos/NikeVapor14.png',
