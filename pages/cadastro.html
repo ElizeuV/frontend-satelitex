@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SateliteX - Cadastro</title>
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="/" class="header_title">
+      <img src="../images/logo_ico.png" alt="Logo">
+    </a>
+  </header>
+
+  <main>
+    <div class="login">
+      <form action="../php/cadastro_cliente.php" method="POST" class="login_form">
+        <h1>Cadastro</h1>
+        <p>Digite os seus dados pessoais nos campos abaixo.</p>
+
+        <label for="name">Nome</label>
+        <input id="name" type="name" placeholder="Digite seu nome" autofocus="true" name="name" />
+
+        <label for="email">E-mail</label>
+        <input id="email" type="email" placeholder="Digite seu e-mail" name="email" />
+
+        <label for="password">Senha</label>
+        <input id="password" type="password" placeholder="Digite sua senha" name="password" />
+
+        <button type="submit">Cadastrar</button>
+        <div class="btn_cadastro">
+          <a href="login.html">Já possui uma conta? Faça login.</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div class="row-footer">
+        <!-- footer col-->
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#"> Quem somos </a></li>
+            <li><a href=""> nossos serviços </a></li>
+            <li><a href=""> política de privacidade </a></li>
+            <li><a href=""> Socios</a></li>
+          </ul>
+        </div>
+        <!--end footer col-->
+        <!-- footer col-->
+        <div class="footer-col">
+          <h4>Obter ajuda</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Transporte</a></li>
+            <li><a href="#">devoluções</a></li>
+            <li><a href="#">Status De Pedido</a></li>
+            <li><a href="#">Opções De Pagamento</a></li>
+          </ul>
+        </div>
+        <!--end footer col-->
+        <!-- footer col-->
+        <div class="footer-col">
+          <h4>Loja online</h4>
+          <ul>
+            <li><a href="#">Roupas</a></li>
+            <li><a href="#">Calçados</a></li>
+            <li><a href="#">Mais vendidos</a></li>
+            <li><a href="#">Endereço</a></li>
+          </ul>
+        </div>
+        <!--end footer col-->
+        <!-- footer col-->
+        <div class="footer-col">
+          <h4>Contato e redes sociais</h4>
+          <!-- <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button>subscrever</button>
+                        </form>
+                    </div> -->
+
+          <div class="medias-socias">
+            <a href="#" class=""><img src="../images/facebook.png" alt=""></a>
+            <a href="#"><img src="../images/instagram.png" alt=""></a>
+            <a href="#" class=><img src="../images/linkedin.png" alt=""></a>
+            <a href="#" class=><img src="../images/whatsapp.png" alt=""></a>
+          </div>
+
+        </div>
+        <!--end footer col-->
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

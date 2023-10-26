@@ -15,7 +15,7 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 6%;
+  padding: 2rem 0;
   background-color: var(--cor-principal);
 }
 
@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   background-color: #fff;
   border-radius: 7px;
-  padding: 35px;
+  padding: 1rem 2rem;
   box-shadow: 10px 10px 40px var( --cor-principal);
   gap: 5px
 }
@@ -61,7 +61,7 @@ body {
   font-weight: 600;
 }
 
-.login_form a {
+.login_form > a {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 13px;
@@ -89,4 +89,13 @@ body {
 .login_form button:hover {
   transform: scale(1.05);
   background-color: #ff0676;
+}
+
+.btn_cadastro {
+  margin: 1rem 0;
+}
+
+.btn_cadastro a {
+  font-size: 13px;
+  color: #555;
 }

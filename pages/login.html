@@ -22,18 +22,21 @@
 
   <main>
     <div class="login">
-      <form method="POST" class="login_form">
+      <form action="../php/valida_usuario.php" method="POST" class="login_form">
         <h1>Login</h1>
-        <p>Digite os seus dados de acesso no campo abaixo.</p>
+        <p>Digite os seus dados de acesso nos campos abaixo.</p>
 
         <label for="email">E-mail</label>
-        <input id="email" type="email" placeholder="Digite seu e-mail" autofocus="true" />
+        <input id="email" type="email" placeholder="Digite seu e-mail" autofocus="true" name="email" />
 
         <label for="password">Senha</label>
-        <input id="password" type="password" placeholder="Digite sua senha" />
+        <input id="password" type="password" placeholder="Digite sua senha" name="password"/>
 
         <a href="">Esqueci minha senha</a>
         <button type="submit">Acessar</button>
+        <div class="btn_cadastro">
+          <a href="cadastro.html">Ainda não é cliente? Cadastre-se.</a>
+        </div>
       </form>
     </div>
   </main>
