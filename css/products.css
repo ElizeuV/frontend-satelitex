@@ -1,0 +1,35 @@
+.content {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img_box {
+    width: 25%;
+}
+
+.img_box img {
+    width: 100%;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-principal);
+    gap: 1rem;
+}
+
+.content_box .name {
+    font-size: 2rem;
+}
+
+.content_box div h1 {
+    background-color: rgba(230, 31, 32, 0.8);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+}
