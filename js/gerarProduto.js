@@ -9,7 +9,7 @@ const getProduct = (produto) => {
   contentBox.className = 'content_box';
   const link = document.createElement('a');
   link.classList = 'buy';
-  link.href = `/frontend-satelitex/pages/produtos/${produto.link}.html`;
+  link.href = `/pages/produtos/${produto.link}.html`;
   const image = document.createElement('img');
   const text = document.createElement('h3');
   const price = document.createElement('h2');

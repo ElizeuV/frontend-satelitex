@@ -6,6 +6,15 @@
 
   $email = $_POST['email'];
   $senha = $_POST['password'];
+
+  $dom = new DOMDocument;
+  $dom -> validateOnParse = true;
+  libxml_use_internal_errors(true);
+  $dom -> loadHTMLFile('../index.html');
+  libxml_use_internal_errors(false);
+  $entrar = $dom -> getElementById('entrar');
+  $entrar ->removeChild($entrar -> childNodes -> item(0));
+
   //verifica se os campos estão vazios
   if(empty($email)) {
     $_SESSION['mensagem']="Preencha o campo E-mail";
@@ -27,6 +36,11 @@
       //coloca o array na sessão
       $_SESSION['usuario'] = $usuario;
       
+      $textNode = $dom -> createTextNode($dados['nome']);    
+      $entrar -> appendChild($textNode);
+
+      $dom -> saveHTMLFile('../index.html');
+
       header("location: ../index.html");
     } else {
       //cria uma sessão para exibir o erro
@@ -34,4 +48,16 @@
       header("location: ../pages/login.html");
     }
   }
+
+  // $dom = new DOMDocument;
+  // $dom -> load('../index.html');
+  // $entrar = $dom -> getElementById('entrar');
+
+  // $sql = "SELECT * FROM cliente WHERE email = '$email' AND senha = '$senha'";
+  // $resultado = pg_query ($sql);
+  // $dados = pg_fetch_assoc($resultado);
+
+  // $textNode = $entrar -> createTextNode($dados['nome']);
+
+  // $entrar -> appendChild($textNode);
 ?>
