@@ -61,13 +61,15 @@
 }
 
 .card img {
-  max-width: 90%;
+  width: 90%;
   transition: 0.5s;
   margin-bottom: 1.2rem;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 .card:hover img {
-  max-width: 70%;
+  width: 70%;
 }
 
 .content_box {

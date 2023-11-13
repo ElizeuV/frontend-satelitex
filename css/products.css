@@ -30,6 +30,8 @@
 
 .img_box img {
     width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 .content_box {

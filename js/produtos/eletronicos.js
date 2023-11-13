@@ -1,5 +1,3 @@
-import renderProduct from '../gerarProduto.js';
-
 const produtos = [
   {
     nome: 'Tênis Air Jordan 16 Mid',
@@ -15,4 +13,4 @@ const produtos = [
   }
 ]
 
-renderProduct(produtos);
+export default produtos;

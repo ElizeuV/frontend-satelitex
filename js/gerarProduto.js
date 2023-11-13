@@ -16,7 +16,7 @@ const getProduct = (produto) => {
   price.className = 'price';
 
   image.src = produto.imagem;
-  image.alt = produto.legenda;
+  image.alt = produto.nome;
   const nome = document.createTextNode(produto.nome);
   const preco = document.createTextNode(`R$ ${produto.preco}`);
   const buy = document.createTextNode('Compre Agora');
