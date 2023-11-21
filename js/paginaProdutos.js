@@ -1,4 +1,4 @@
-import produtos from "./produtos/all.js";
+import produtos from "./produtos/produtos.js";
 
 const image = document.getElementById('image');
 const nome = document.getElementById('name');

@@ -1,6 +1,8 @@
-import produtos from "../produtos/eletronicos.js";
+import produtos from "../produtos/produtos.js";
 import renderProduct from "../gerarProduto.js";
 
-renderProduct(produtos);
+const newProducts = produtos.filter(produto => { 
+  return produto.categoria.includes('eletronicos')
+})
 
-console.log(produtos)
+renderProduct(newProducts);

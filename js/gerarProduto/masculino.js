@@ -1,6 +1,8 @@
-import produtos from "../produtos/masculino.js";
+import produtos from "../produtos/produtos.js";
 import renderProduct from "../gerarProduto.js";
 
-renderProduct(produtos);
+const newProducts = produtos.filter(produto => { 
+  return produto.categoria.includes('masculino')
+})
 
-console.log(produtos)
+renderProduct(newProducts);

@@ -1,4 +1,4 @@
-import produtos from "../produtos/index.js";
+import produtos from "../produtos/produtos.js";
 import renderProduct from "../gerarProduto.js";
 
 renderProduct(produtos);
