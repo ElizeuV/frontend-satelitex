@@ -51,4 +51,37 @@ switch(path) {
         }
         TenisOldSchoolRoseSmookeVans();
         break;
+    case '/pages/produtos/Camisa-Polo-Nike-Dri-FIT-Park-Masculina-Branca.html':
+        const CamisaPoloNikeDriFITParkMasculinaBranca = () => {
+            const produto = produtos.filter(produto => (produto.link == 'Camisa-Polo-Nike-Dri-FIT-Park-Masculina-Branca'));
+            image.src = produto[0].imagem;
+            const text = document.createTextNode(produto[0].nome)
+            nome.appendChild(text);
+            const number = document.createTextNode(produto[0].preco)
+            price.appendChild(number);
+        }
+        CamisaPoloNikeDriFITParkMasculinaBranca();
+        break;
+    case '/pages/produtos/Camiseta-Nike-Dri-FIT-Academy-23-Masculina-Azul.html':
+        const CamisetaNikeDriFITAcademy23MasculinaAzul = () => {
+            const produto = produtos.filter(produto => (produto.link == 'Camiseta-Nike-Dri-FIT-Academy-23-Masculina-Azul'));
+            image.src = produto[0].imagem;
+            const text = document.createTextNode(produto[0].nome)
+            nome.appendChild(text);
+            const number = document.createTextNode(produto[0].preco)
+            price.appendChild(number);
+        }
+        CamisetaNikeDriFITAcademy23MasculinaAzul();
+        break;
+    case '/pages/produtos/Camiseta-Nike-Dri-FIT-Academy-23-Masculina-Branca.html':
+        const CamisetaNikeDriFITAcademy23MasculinaBranca = () => {
+            const produto = produtos.filter(produto => (produto.link == 'Camiseta-Nike-Dri-FIT-Academy-23-Masculina-Branca'));
+            image.src = produto[0].imagem;
+            const text = document.createTextNode(produto[0].nome)
+            nome.appendChild(text);
+            const number = document.createTextNode(produto[0].preco)
+            price.appendChild(number);
+        }
+        CamisetaNikeDriFITAcademy23MasculinaBranca();
+        break;
 }

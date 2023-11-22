@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 3% 0;
+  padding: 1% 0;
   flex-wrap: wrap;
   background-color: var(--cor-secundaria);
+  height: 15vh;
 }
 
 .button {
