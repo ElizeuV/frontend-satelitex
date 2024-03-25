@@ -1,5 +1,6 @@
 .categories_list {
   display: flex;
+  background-color: var(--cor-secundaria);
   justify-content: space-evenly;
   list-style: none;
   flex-wrap: wrap;
@@ -11,7 +12,7 @@ a {
 }
 
 .categories_list_link {
-  color: var(--cor-secundaria);
+  color: var(--cor-principal);
   font-family: var(--font-secundaria);
   text-decoration: none;
   outline: none;
@@ -20,6 +21,7 @@ a {
   position: relative;
   padding: 0.5rem;
   font-weight: bold;
+  z-index: 1;
 }
 
 .categories_list_link::before {
@@ -27,7 +29,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -42,7 +44,7 @@ a {
 }
 
 .categories_list_link:hover {
-  color: var(--cor-principal);
+  color: var(--cor-secundaria);
   text-decoration: none;
 }
 

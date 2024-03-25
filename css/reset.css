@@ -142,7 +142,7 @@ table {
 }
 
 :root {
-  --cor-principal: #0F0E0E;
+  --cor-principal: rgba(18, 20, 20, 0.9);
   --cor-secundaria: #f6f6f6;
   --cor-terciaria: #22d4fd;
   --cor-hover: #272727;
