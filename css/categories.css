@@ -69,7 +69,7 @@ a {
   }
 
   .categories_list {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
     height: 100vh;
     flex-direction: column;
     padding: 0 1rem;
@@ -93,7 +93,7 @@ a {
   }
 
   .categories_list_link:hover {
-    color: var(--cor-secundaria);
+    color: var(--cor-principal);
   }
 
   @keyframes showNavbar {

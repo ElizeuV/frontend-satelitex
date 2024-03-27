@@ -8,6 +8,7 @@
   height: 15vh;
 }
 
+
 .button {
   display: none;
   background-color: transparent;
@@ -25,6 +26,46 @@
   font-family: Chiller;
   font-size: 50px;
   margin: 0;
+}
+
+.header_title {
+  width: 15rem;
+  text-decoration: none;
+}
+
+.header_title:hover {
+  text-decoration: none;
+}
+
+.header_title h1 {
+  font-family: Nasa;
+  font-size: 3rem;
+  color: var(--cor-principal);
+  position: relative;
+}
+
+.rotation_title {
+  font-family: Chiller;
+  font-size: 5rem;
+  color: red;
+  position: absolute;
+  top: -30%;
+  right: 5%;
+  animation: rotationTitle 3s infinite;
+}
+
+@keyframes rotationTitle {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 
 .header_title img {

@@ -36,9 +36,10 @@ background-image: url(../images/flecha.png);
   /*justify-content: center;*/
   font-family: var(--font-secundaria);
   font-weight: 600;
+  color: black;
   margin-top: 2rem;
   position: relative;
-  background-color: rgba(18, 20, 20, 1);
+  background-color: #e9e9e9;
   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);*/
   width: 100%;
   height: 100%;
@@ -52,7 +53,7 @@ background-image: url(../images/flecha.png);
   top: -50%;
   width: 100%;
   height: 100%;
-  background-color: #F2C6B6;
+  background-color: rgba(230, 31, 32, 0.6);
   transform: skewY(-15deg);
   transition: 0.5s;
 }

@@ -3,39 +3,33 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SateliteX</title>
+  <title>Pré Carrinho</title>
 
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/categories.css">
+  <link rel="stylesheet" href="../css/map.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/footer.css">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../css/reset.css">
-  <link rel="stylesheet" href="../../css/header.css">
-  <link rel="stylesheet" href="../../css/categories.css">
-  <link rel="stylesheet" href="../../css/content.css">
-  <link rel="stylesheet" href="../../css/map.css">
-  <link rel="stylesheet" href="../../css/contact.css">
-  <link rel="stylesheet" href="../../css/footer.css">
-  <link rel="stylesheet" href="../../css/products.css">
-
-  <link rel="shortcut icon" href="../../favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <script defer src="../../js/script.js"></script>
-  <script type="module" defer src="../../js/paginaProdutos.js"></script>
+  <script defer src="../js/script.js"></script>
 </head>
 
 <body>
   <header class="header" tabindex="0">
     <button onclick="toggleNavbar()" class="button button_open">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
-        viewBox="0 0 16 16">
+        viewbox="0 0 16 16">
         <path fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+        </path>
       </svg>
     </button>
 
@@ -47,18 +41,18 @@
     <nav class="header_navigation">
       <ul>
         <!-- <li class="header__navegacao__item">
-            <a class="header__navegacao__item__link" href="index.html">Home</a>
-        </li> -->
+                <a class="header__navegacao__item__link" href="index.html">Home</a>
+            </li> -->
 
         <li class="header_navigation_item">
           <a class="lista_desejo" href="/">Lista de desejos</a>
         </li>
 
         <li class="header_navigation_item">
-          <a class="entrar" id="entrar" href="../login.html"></a>
+          <a class="entrar" id="entrar" href="../pages/login.html">Entrar</a>
         </li>
         <li class="header_navigation_item">
-          <a href="/" class="favoritos"><img src="../../images/coracao.png" alt="Favoritos"></a>
+          <a href="/" class="favoritos"><img src="../images/coracao.png" alt="Favoritos"></a>
         </li>
       </ul>
     </nav>
@@ -75,53 +69,52 @@
           </li>
 
           <li>
-            <a class="categories_list_link" href="../../index.html">Todas Categorias</a>
+            <a class="categories_list_link" href="../index.html">Todas Categorias</a>
           </li>
 
           <li>
-            <a class="categories_list_link" href="../feminino.html">Feminino</a>
+            <a class="categories_list_link" href="./feminino.html">Feminino</a>
           </li>
 
           <li>
-            <a class="categories_list_link" href="../masculino.html">Masculino</a>
+            <a class="categories_list_link" href="./masculino.html">Masculino</a>
           </li>
 
           <li>
-            <a class="categories_list_link" href="../infantil.html">Infantil</a>
+            <a class="categories_list_link" href="./infantil.html">Infantil</a>
           </li>
 
           <li>
-            <a class="categories_list_link" href="../calcados.html">Calçados</a>
+            <a class="categories_list_link" href="./calcados.html">Calçados</a>
           </li>
 
           <li>
-            <a class="categories_list_link" href="../eletronicos.html">Eletrônicos</a>
+            <a class="categories_list_link" href="./eletronicos.html">Eletrônicos</a>
           </li>
 
           <li>
-            <a class="categories_list_link" href="../promocoes.html">Promoções</a>
+            <a class="categories_list_link" href="./promocoes.html">Promoções</a>
           </li>
         </ul>
       </nav>
     </section>
 
-    <section class="main">
+    <section>
       <div class="content" id="content">
-            <div class="img_box">
-                <img id="image" src="" alt="">
-            </div>
-            <div class="content_box">
-                <div class="name" id="name"></div>
-                <div class="price" id="price"></div>
-                <div class="add_to_cart"><a href="../preCarrinho.html">Adcionar ao Carrinho</a><span></span></div>
-            </div>
+        <div class="preCart_produto">
+          <img id="product_image" src="" alt="produto">
+          <p id="product_name"></p>
+          <p id="product_size"></p>
+          <p id="product_color"></p>
+          <p id="product_price"></p>
+          <p id="cart_check"></p>
+        </div>
       </div>
     </section>
 
     <section class="map">
       <div class="map_info">
         <h3>Nossa localização</h3>
-        <!-- <p>Nosso estabelecimento está localizado no coração da cidade.</p> -->
       </div>
 
       <div class="map_frame">
@@ -143,10 +136,10 @@
   </main>
 
   <nav class="nav_bottom">
-    <a href="/" class="nav_bottom_item lista_desejo_bottom"><img src="../../images/sacolas-de-compras-white.png"
+    <a href="/" class="nav_bottom_item lista_desejo_bottom"><img src="..images/sacolas-de-compras-white.png"
         alt="Favoritos"></a>
-    <a href="/" class="nav_bottom_item favoritos_bottom"><img src="../../images/amor.png" alt="Favoritos"></a>
-    <a href="../login.html" class="nav_bottom_item login_bottom"><img src="../../images/novo-usuario-white.png"
+    <a href="/" class="nav_bottom_item favoritos_bottom"><img src="..images/amor.png" alt="Favoritos"></a>
+    <a href="./login.html" class="nav_bottom_item login_bottom"><img src="..images/novo-usuario-white.png"
         alt="Favoritos"></a>
   </nav>
 
@@ -198,10 +191,10 @@
                     </div> -->
 
           <div class="medias-socias">
-            <a href="#" class=""><img src="../../images/facebook.png" alt=""></a>
-            <a href="#" class=""><img src="../../images/instagram.png" alt=""></a>
-            <a href="#" class=""><img src="../../images/linkedin.png" alt=""></a>
-            <a href="#" class=""><img src="../../images/whatsapp.png" alt=""></a>
+            <a href="#" class=""><img src="../images/facebook.png" alt=""></a>
+            <a href="#" class=""><img src="../images/instagram.png" alt=""></a>
+            <a href="#" class=""><img src="../images/linkedin.png" alt=""></a>
+            <a href="#" class=""><img src="../images/whatsapp.png" alt=""></a>
           </div>
 
         </div>
@@ -209,15 +202,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  </main>
 </body>
 
 </html>
