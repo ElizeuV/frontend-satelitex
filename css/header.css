@@ -46,12 +46,12 @@
 
 .rotation_title {
   font-family: Chiller;
-  font-size: 5rem;
+  font-size: 4rem;
   color: red;
   position: absolute;
-  top: -30%;
+  top: -15%;
   right: 5%;
-  animation: rotationTitle 3s infinite;
+  animation: rotationTitle 5s infinite;
 }
 
 @keyframes rotationTitle {

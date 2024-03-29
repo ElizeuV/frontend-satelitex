@@ -13,7 +13,7 @@ switch(path) {
             image.src = produto[0].imagem;
             const text = document.createTextNode(produto[0].nome)
             nome.appendChild(text);
-            const number = document.createTextNode(produto[0].preco)
+            const number = document.createTextNode(`R$${produto[0].preco}`)
             price.appendChild(number);
         }
         AirJordan();

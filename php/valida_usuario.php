@@ -13,7 +13,7 @@
   $dom -> loadHTMLFile('../index.html');
   libxml_use_internal_errors(false);
   $entrar = $dom -> getElementById('entrar');
-  $entrar ->removeChild($entrar -> childNodes -> item(0));
+  //$entrar ->removeChild($entrar -> childNodes -> item(0));
 
   //verifica se os campos estão vazios
   if(empty($email)) {
@@ -36,8 +36,9 @@
       //coloca o array na sessão
       $_SESSION['usuario'] = $usuario;
       
-      $textNode = $dom -> createTextNode($dados['nome']);    
-      $entrar -> appendChild($textNode);
+      // $textNode = $dom -> createTextNode("Sair");    
+      // $entrar -> appendChild($textNode);
+      $entrar -> setAttribute('data-login', 'true');
 
       $dom -> saveHTMLFile('../index.html');
 

@@ -3,4 +3,4 @@ import renderProduct from "../gerarProduto.js";
 
 renderProduct(produtos);
 
-console.log(produtos)
+//console.log(produtos)
