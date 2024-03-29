@@ -4,6 +4,10 @@ if(login.dataset.login == 'true') {
   login.innerText = 'Sair';
 }
 
+if(login.dataset.login == 'false') {
+  login.innerText = 'Entrar';
+}
+
 login.addEventListener('click', (e) => {
   if(login.dataset.login == 'true') {
     e.preventDefault();

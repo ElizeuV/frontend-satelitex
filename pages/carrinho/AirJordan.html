@@ -26,7 +26,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script defer src="../../js/script.js"></script>
-  <script type="module" defer src="../../js/paginaProdutos.js"></script>
+  <script type="module" defer src="../../js/preCarrinho.js"></script>
+  <script defer src="../../js/validarLogin.js"></script>
+  <script defer src="../../js/frete.js"></script>
 </head>
 
 <body>
@@ -55,7 +57,7 @@
         </li>
 
         <li class="header_navigation_item">
-          <a class="entrar" id="entrar" href="../login.html"></a>
+          <a class="entrar" id="entrar" href="../login.html" data-login="false"></a>
         </li>
         <li class="header_navigation_item">
           <a href="/" class="favoritos"><img src="../../images/coracao.png" alt="Favoritos"></a>
@@ -106,20 +108,46 @@
     </section>
 
     <section class="main">
-      <div class="content" id="content">
-        <div class="preCart_produto">
+      <div class="cart_content" id="content">
+        <div class="cart_produto">
           <div class="product_image">
             <img id="product_image" src="" alt="produto">
           </div>
           <div class="product_info">
-            <p id="product_name"></p>
-            <p id="product_size"></p>
-            <p id="product_color"></p>
-            <p id="cart_check"></p>
+            <div id="product_name"></div>
+            <div id="product_size"></div>
+            <div id="product_color"></div>
+            <div id="cart_check"><i class="fa-solid fa-circle-check fa-lg" style="color: #22a222;"></i> Produto adcionado ao carrinho!</div>
           </div>
           <div class="product_price">
-            <p id="product_price"></p>
+            <div id="product_price"></div>
           </div>
+        </div>
+        <div class="juntar">
+          <div class="cart_garantia">
+            <h1 class="garantia_title">Garantia estendida</h1>
+            <div class="garantia_box">
+              <h1>Sem garantia<br><span>&#40;Somente garantia do fabricante&#41;</span></h1>
+              <input type="radio" name="garantia" id="">
+            </div>
+            <div class="garantia_box">
+              <h1>12 Meses de garantia</h1>
+              <input type="radio" name="garantia" id="">
+            </div>
+            <div class="garantia_box">
+              <h1>24 Meses de garantia</h1>
+              <input type="radio" name="garantia" id="">
+            </div>
+          </div>
+          <form class="cart_frete" id="cart_frete">
+            <h1>Digite seu CEP <span>&#40;Sem hífen&#41;</span></h1>
+            <input type="text" value="" id="cep">
+
+            <h1>Aplicar cupom</h1>
+            <input type="text" value="">
+
+            <button type="submit">Ir para pagamento</button>
+          </form>
         </div>
       </div>
     </section>

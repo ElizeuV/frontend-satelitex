@@ -6,10 +6,10 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: var(--cor-secundaria);
+    background-color: #e9e9e9;
 }
 
-.content::before {
+/* .content::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -17,12 +17,12 @@
     height: 100%;
     background-color: rgba(230, 31, 32, 0.5);
     transform: skewY(-15deg);
-}
+} */
 
 .img_box {
     width: 40%;
     min-height: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 3rem 0;
     padding: 2rem 5rem;
     background-color: rgba(0, 0, 0, 0.2);
