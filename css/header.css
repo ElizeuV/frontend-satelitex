@@ -92,6 +92,11 @@
   align-items: center;
 }
 
+.header_navigation_item img {
+  width: 2rem;
+  cursor: pointer;
+}
+
 .lista_desejo {
   background: url(../images/sacola-de-compra.png) no-repeat;
   padding-left: 27px;

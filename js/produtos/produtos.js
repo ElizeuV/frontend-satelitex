@@ -14,7 +14,7 @@ const produtos = [
         imagem: '../../images/produtos/AdidasFemininoVermelho.png',
         link: 'AdidasFemininoVermelho',
         categoria: ['calcados', 'feminino', 'promocoes'],
-        cor: 'Vinho',
+        cor: 'Vermelho',
         tamanho: 36
     },
     {
@@ -83,8 +83,8 @@ const produtos = [
     {
         nome: 'Smart TV Samsung 70" 4K',
         preco: 6899.99,
-        imagem: '../../images/produtos/Smart-TV-Samsung-70”-4K-Wi-Fi-Crystal-UHD-Comando-de-Voz-UN70CU7700GXZD.png',
-        link: 'Smart-TV-Samsung-70”-4K-Wi-Fi-Crystal-UHD-Comando-de-Voz-UN70CU7700GXZD',
+        imagem: '../../images/produtos/Smart-TV-Samsung-70-4K-Wi-Fi-Crystal-UHD-Comando-de-Voz-UN70CU7700GXZD.png',
+        link: 'Smart-TV-Samsung-70-4K-Wi-Fi-Crystal-UHD-Comando-de-Voz-UN70CU7700GXZD',
         categoria: ['eletronicos', ''],
         cor: 'Preto',
         tamanho: ''
@@ -92,8 +92,8 @@ const produtos = [
     {
         nome: 'Smartphone Motorola Moto E22 128GB 4G',
         preco: 799.99,
-        imagem: '../../images/produtos/Smartphone-E22-128gb-4g-65-Hd-Câmera-Dupla-16mp-Motorola-Cor-Preto.png',
-        link: 'Smartphone-E22-128gb-4g-65-Hd-Câmera-Dupla-16mp-Motorola-Cor-Preto',
+        imagem: '../../images/produtos/Smartphone-E22-128gb-4g-65-Hd-Camera-Dupla-16mp-Motorola-Cor-Preto.png',
+        link: 'Smartphone-E22-128gb-4g-65-Hd-Camera-Dupla-16mp-Motorola-Cor-Preto',
         categoria: ['eletronicos', 'promocoes'],
         cor: 'Grafite',
         tamanho: ''
@@ -162,7 +162,7 @@ const produtos = [
         tamanho: 'M'
     },
     {
-        nome: 'Short Infantil Lilica',
+        nome: 'Short Infantil Lilica Rosa',
         preco: 39.99,
         imagem: '../../images/produtos/Short-Infantil-Feminino-Lilica-Rosa.png',
         link: 'Short-Infantil-Feminino-Lilica-Rosa',
@@ -173,8 +173,8 @@ const produtos = [
     {
         nome: 'Blusa Manga Curta Aquarela Lilica Multicores',
         preco: 59.99,
-        imagem: '../../images/produtos/Blusa-Manga-Curta-Aquarela-Bebê-Feminina-Lilica-Multicores.png',
-        link: 'Blusa-Manga-Curta-Aquarela-Bebê-Feminina-Lilica-Multicores',
+        imagem: '../../images/produtos/Blusa-Manga-Curta-Aquarela-Bebe-Feminina-Lilica-Multicores.png',
+        link: 'Blusa-Manga-Curta-Aquarela-Bebe-Feminina-Lilica-Multicores',
         categoria: ['infantil', ''],
         cor: 'Multicor',
         tamanho: 'G'

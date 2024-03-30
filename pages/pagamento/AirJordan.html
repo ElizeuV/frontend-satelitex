@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../../css/map.css">
   <link rel="stylesheet" href="../../css/contact.css">
   <link rel="stylesheet" href="../../css/footer.css">
-  <link rel="stylesheet" href="../../css/products.css">
+  <link rel="stylesheet" href="../../css/pagamento.css">
 
   <link rel="shortcut icon" href="../../favicon/favicon.ico" type="image/x-icon">
 
@@ -26,8 +26,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script defer src="../../js/script.js"></script>
-  <script type="module" defer src="../../js/paginaProdutos.js"></script>
+  <script type="module" defer src="../../js/preCarrinho.js"></script>
   <script defer src="../../js/validarLogin.js"></script>
+  <script defer src="../../js/pagamentoEndereco.js"></script>
 </head>
 
 <body>
@@ -59,8 +60,7 @@
           <a class="entrar" id="entrar" href="../login.html" data-login="false"></a>
         </li>
         <li class="header_navigation_item">
-          <!-- <a href="/" class="favoritos"><img src="images/coracao.png" alt="Favoritos"></a> -->
-          <!-- <img id="change_theme" src="../images/dia-e-noite.png" alt=""> -->
+          <a href="/" class="favoritos"><img src="../../images/coracao.png" alt="Favoritos"></a>
         </li>
       </ul>
     </nav>
@@ -108,15 +108,32 @@
     </section>
 
     <section class="main">
-      <div class="content" id="content">
-            <div class="img_box">
-                <img id="image" src="" alt="">
-            </div>
-            <div class="content_box">
-                <div class="name" id="name"></div>
-                <div class="price" id="price"></div>
-                <div class="add_to_cart"><a href="" id="nextPage">Adcionar ao Carrinho</a></div>
-            </div>
+      <div class="pagamento_content" id="content">
+        <div class="pagamento_endereco">
+          <h1>Endereço:</h1>
+          <div id="rua"></div>
+          <div id="bairro"></div>
+          <div id="cidade"></div>
+        </div>
+        <div class="pagamento_produto">
+          <h1>Produto e serviço</h1>
+          <div id="pagamento_image"></div>
+          <div id="pagamento_name"></div>
+          <div id="pagamento_size"></div>
+          <div id="pagamento_color"></div>
+          <div id="pagamento_quant"></div>
+          <div id="pagamento_remove"></div>
+          <div id="pagamento_price"></div>
+          <div id="pagamento_envio"></div>
+        </div>
+        <div class="pagamento_checkout">
+          <h1>Resumo</h1>
+          <div id="pagamento_valor"></div>
+          <hr>
+          <div id="pagamento_frete"></div>
+          <div id="pagamento_total"></div>
+          <a href="#">Finalizar pedido</a>
+        </div>
       </div>
     </section>
 

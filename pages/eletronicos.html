@@ -20,15 +20,14 @@
 
   <script defer src="../js/script.js"></script>
   <script type="module" defer src="../js/gerarProduto/eletronicos.js"></script>
+  <script defer src="../js/validarLogin.js"></script>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" tabindex="0">
     <button onclick="toggleNavbar()" class="button button_open">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewbox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
       </svg>
     </button>
 
@@ -39,20 +38,20 @@
 
     <nav class="header_navigation">
       <ul>
+        <!-- <li class="header__navegacao__item">
+            <a class="header__navegacao__item__link" href="index.html">Home</a>
+        </li> -->
+
         <li class="header_navigation_item">
-          <a href="../index.html">Home</a>
+          <a class="lista_desejo" href="/">Lista de desejos</a>
         </li>
 
         <li class="header_navigation_item">
-          <a href="/">Carrinho</a>
+          <a class="entrar" id="entrar" href="./login.html" data-login="false"></a>
         </li>
-
         <li class="header_navigation_item">
-          <a href=""><img src="../images/coracao.png" alt="Favoritos"></a>
-        </li>
-
-        <li class="header_navigation_item">
-          <a href="">Sair</a>
+          <!-- <a href="/" class="favoritos"><img src="images/coracao.png" alt="Favoritos"></a> -->
+          <!-- <img id="change_theme" src="../images/dia-e-noite.png" alt=""> -->
         </li>
       </ul>
     </nav>

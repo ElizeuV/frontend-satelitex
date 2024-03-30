@@ -16,8 +16,13 @@ form.addEventListener('submit', (event) => {
     response.json().then(function (data) {
       console.log(data)
       localStorage.setItem('logradouro', data.logradouro);
+      localStorage.setItem('bairro', data.bairro);
+      localStorage.setItem('localidade', data.localidade);
     })
   })
-  //window.location = 'pages/game.html';
+
+  const nextPage = window.location.pathname.replace('carrinho', 'pagamento');
+
+  window.location = nextPage;
   console.log(input.value)
 })

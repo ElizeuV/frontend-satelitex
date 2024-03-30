@@ -27,6 +27,7 @@
 
   <script defer src="../../js/script.js"></script>
   <script type="module" defer src="../../js/paginaProdutos.js"></script>
+  <script defer src="../../js/validarLogin.js"></script>
 </head>
 
 <body>
@@ -55,10 +56,11 @@
         </li>
 
         <li class="header_navigation_item">
-          <a class="entrar" id="entrar" href="../login.html"></a>
+          <a class="entrar" id="entrar" href="../login.html" data-login="false"></a>
         </li>
         <li class="header_navigation_item">
-          <a href="/" class="favoritos"><img src="../../images/coracao.png" alt="Favoritos"></a>
+          <!-- <a href="/" class="favoritos"><img src="images/coracao.png" alt="Favoritos"></a> -->
+          <!-- <img id="change_theme" src="../images/dia-e-noite.png" alt=""> -->
         </li>
       </ul>
     </nav>
@@ -113,7 +115,7 @@
             <div class="content_box">
                 <div class="name" id="name"></div>
                 <div class="price" id="price"></div>
-                <div class="add_to_cart"><a href="../preCarrinho.html">Adcionar ao Carrinho</a><span></span></div>
+                <div class="add_to_cart"><a id="nextPage" href="">Adcionar ao Carrinho</a></div>
             </div>
       </div>
     </section>
