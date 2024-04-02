@@ -1,0 +1,65 @@
+.finalizado_content{
+  width: 90vw;
+  height: 49.5vh;
+}
+
+.finalizado {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8rem;
+  gap: 2rem;
+}
+
+.finalizado h1 {
+  font-size: 1.6rem;
+  color: var(--cor-secundaria);
+}
+
+.finalizado a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-size: 1.4rem;
+}
+
+.finalizado a {
+  border: 1px solid #aaa;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
+}
+
+.finalizado a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-secundaria);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: rotateX(90deg);
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  z-index: -1;
+}
+
+.finalizado a:hover::before {
+  transform: rotateX(0);
+}
+
+.finalizado a:hover {
+  color: var(--cor-principal);
+  text-decoration: none;
+  z-index: 3;
+}

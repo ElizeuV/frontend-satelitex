@@ -1,7 +1,7 @@
 .pagamento_content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.8fr 1fr;
   grid-template-areas: 'pagamento_endereco pagamento_checkout'
                        'pagamento_produto pagamento_checkout';
   min-height: 80vh;
@@ -33,7 +33,6 @@
 .pagamento_produto {
   width: 100%;
   height: 100%;
-  background-color: blue;
   grid-area: pagamento_produto;
   background-color: #e9e9e9;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
@@ -44,10 +43,161 @@
 .pagamento_checkout {
   width: 100%;
   height: 100%;
-  background-color: green;
   grid-area: pagamento_checkout;
   background-color: #e9e9e9;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
   padding: 2rem;
   color: var(--cor-principal);
+}
+
+.pagamento_produto {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 18rem;
+  height: 100%;
+  gap: 1rem;
+}
+
+.pagamento_title {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  font-size: 1.4rem;
+}
+
+.pagamento_image {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+#pagamento_image {
+  width: 70%;
+}
+
+.juntar {
+  width: 100%;
+  height: 100%;
+}
+
+.pagamento_envio {
+  display: flex;
+  position: relative;
+  height: 100%;
+  padding: 2rem;
+  padding-top: 3rem;
+  gap: 2rem;
+  border: 1px solid #aaa;
+  border-radius: 1rem;
+}
+
+.juntar_envio {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#pagamento_price {
+  position: absolute;
+  top: 32%;
+  right: 5%;
+}
+
+#pagamento_quant {
+  position: absolute;
+  top: 22%;
+  right: 8.5%;
+}
+
+#pagamento_remove {
+  position: absolute;
+  top: 9.5%;
+  right: 8.6%;
+}
+
+#pagamento_remove a {
+  text-decoration: none;
+  color: red;
+  border: 1px solid red;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.pagamento_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.pagamento_checkout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.pagamento_checkout h1 {
+  font-size: 1.4rem;
+}
+
+.pagamento_checkout_juntar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagamento_checkout hr {
+  position: absolute;
+  top: 23%;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background-color: var(--cor-principal);
+}
+
+#pagamento_total {
+  align-self: center;
+  font-weight: bold;
+}
+
+.pagamento_button {
+  border: 1px solid #aaa;
+  margin-top: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: var(--cor-principal);
+  text-align: center;
+}
+
+.pagamento_button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-principal);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: rotateX(90deg);
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  z-index: -1;
+}
+
+.pagamento_button:hover::before {
+  transform: rotateX(0);
+}
+
+.pagamento_button:hover {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  z-index: 3;
 }

@@ -26,7 +26,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script defer src="../../js/script.js"></script>
-  <script type="module" defer src="../../js/preCarrinho.js"></script>
+  <script type="module" defer src="../../js/pagamentoProduto.js"></script>
   <script defer src="../../js/validarLogin.js"></script>
   <script defer src="../../js/pagamentoEndereco.js"></script>
 </head>
@@ -59,9 +59,9 @@
         <li class="header_navigation_item">
           <a class="entrar" id="entrar" href="../login.html" data-login="false"></a>
         </li>
-        <li class="header_navigation_item">
+        <!-- <li class="header_navigation_item">
           <a href="/" class="favoritos"><img src="../../images/coracao.png" alt="Favoritos"></a>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </header>
@@ -116,23 +116,57 @@
           <div id="cidade"></div>
         </div>
         <div class="pagamento_produto">
-          <h1>Produto e serviço</h1>
-          <div id="pagamento_image"></div>
-          <div id="pagamento_name"></div>
-          <div id="pagamento_size"></div>
-          <div id="pagamento_color"></div>
-          <div id="pagamento_quant"></div>
-          <div id="pagamento_remove"></div>
+          <h1 class="pagamento_title">Produto e serviço</h1>
+          <div class="pagamento_image">
+            <img src="" alt="" id="pagamento_image">
+          </div>
+          <div class="juntar pagamento_info">
+            <div id="pagamento_name"></div>
+            <div id="pagamento_size"></div>
+            <div id="pagamento_color"></div>
+          </div>
+          <div id="pagamento_quant">Quantidade: 1</div>
+          <div id="pagamento_remove"><a href="/">Remover item</a></div>
           <div id="pagamento_price"></div>
-          <div id="pagamento_envio"></div>
+          <div class="juntar">
+            <div class="pagamento_envio">
+              <h1 class="pagamento_title">Envio</h1>
+
+              <div class="juntar_envio">
+                <input type="radio" name="envio" id="">
+              <h1>Envio 1</h1>
+              </div>
+
+              <div class="juntar_envio">
+                <input type="radio" name="envio" id="">
+              <h1>Envio 2</h1>
+              </div>
+
+              <div class="juntar_envio">
+                <input type="radio" name="envio" id="">
+              <h1>Envio 3</h1>
+              </div>
+
+              <div class="juntar_envio">
+                <input type="radio" name="envio" id="">
+              <h1>Envio 4</h1>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="pagamento_checkout">
           <h1>Resumo</h1>
-          <div id="pagamento_valor"></div>
+          <div class="pagamento_checkout_juntar">
+            <div>Valor dos Produtos:</div>
+            <div id="pagamento_valor"></div>
+          </div>
           <hr>
-          <div id="pagamento_frete"></div>
+          <div class="pagamento_checkout_juntar">
+            <div id="pagamento_frete">Valor do frete:</div>
+            <div>R$35,00</div>
+          </div>
           <div id="pagamento_total"></div>
-          <a href="#">Finalizar pedido</a>
+          <a href="../finalizado.html" class="pagamento_button">Finalizar pedido</a>
         </div>
       </div>
     </section>
