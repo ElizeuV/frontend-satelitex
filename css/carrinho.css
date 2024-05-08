@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 2rem 3rem;
   background-color: var(--cor-secundaria);
-  color: var(--cor-principal);
+  color: black;
 }
 
 .cart_produto {
@@ -13,7 +13,7 @@
   background-color: #e9e9e9;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
   padding: 0 3rem;
-  color: var(--cor-principal);
+  color: black;
 }
 
 .product_image {
@@ -40,7 +40,7 @@
   position: absolute;
   bottom: 10%;
   right: 40%;
-  color: var(--cor-principal);
+  color: black;
 }
 
 .product_price {

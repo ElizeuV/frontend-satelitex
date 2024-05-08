@@ -1,6 +1,7 @@
 .finalizado_content{
-  width: 90vw;
+  width: 100vw;
   height: 49.5vh;
+  background-color: var(--cor-secundaria);
 }
 
 .finalizado {
@@ -10,18 +11,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 8rem;
   gap: 2rem;
 }
 
 .finalizado h1 {
   font-size: 1.6rem;
-  color: var(--cor-secundaria);
+  color: black;
 }
 
 .finalizado a {
   text-decoration: none;
-  color: var(--cor-secundaria);
+  color: black;
   font-size: 1.4rem;
 }
 
@@ -43,7 +43,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -59,7 +59,7 @@
 }
 
 .finalizado a:hover {
-  color: var(--cor-principal);
+  color: var(--cor-secundaria);
   text-decoration: none;
   z-index: 3;
 }

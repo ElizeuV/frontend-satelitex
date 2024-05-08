@@ -12,7 +12,7 @@ a {
 }
 
 .categories_list_link {
-  color: var(--cor-principal);
+  color: black;
   font-family: var(--font-secundaria);
   text-decoration: none;
   outline: none;
