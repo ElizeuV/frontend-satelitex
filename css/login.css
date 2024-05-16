@@ -53,7 +53,7 @@ body {
 }
 
 .login_form input:focus {
-  border: 1px solid #22d4fd;
+  border: 1px solid var(--cor-principal);
 }
 
 .login_form label {
@@ -70,11 +70,11 @@ body {
 }
 
 .login_form a:hover {
-  color: #22d4fd;
+  color: #00b2db;
 }
 
 .login_form button {
-  background-color: #22d4fd;
+  background-color: #00b2db;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -88,7 +88,7 @@ body {
 
 .login_form button:hover {
   transform: scale(1.05);
-  background-color: #ff0676;
+  background-color: var(--cor-principal);
 }
 
 .btn_cadastro {
