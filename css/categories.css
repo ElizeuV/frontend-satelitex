@@ -5,6 +5,7 @@
   list-style: none;
   flex-wrap: wrap;
   padding: 3%;
+  z-index: 10;
 }
 
 a {
@@ -12,7 +13,7 @@ a {
 }
 
 .categories_list_link {
-  color: black;
+  color: var(--cor-quadriaria);
   font-family: var(--font-secundaria);
   text-decoration: none;
   outline: none;
@@ -21,7 +22,7 @@ a {
   position: relative;
   padding: 0.5rem;
   font-weight: bold;
-  z-index: 1;
+  z-index: 10;
 }
 
 .categories_list_link::before {
@@ -44,7 +45,7 @@ a {
 }
 
 .categories_list_link:hover {
-  color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
   text-decoration: none;
 }
 

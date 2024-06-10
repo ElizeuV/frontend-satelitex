@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  color: #023047;
+  color: var(--cor-secundaria);
 }
 
 .header_title {
@@ -16,16 +16,17 @@ body {
   align-content: center;
   justify-content: center;
   padding: 2rem 0;
-  background-color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
 }
 
 .login_form {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
   border-radius: 7px;
   padding: 1rem 2rem;
-  box-shadow: 10px 10px 40px var( --cor-principal);
+  box-shadow: 0px 0px 20px var( --cor-quadriaria);
   gap: 5px
 }
 
@@ -37,7 +38,6 @@ body {
 .login_form p {
   display: inline-block;
   font-size: 14px;
-  color: #666;
   margin-bottom: 25px;
 }
 
@@ -70,11 +70,11 @@ body {
 }
 
 .login_form a:hover {
-  color: #00b2db;
+  color: var(--cor-principal);
 }
 
 .login_form button {
-  background-color: #00b2db;
+  background-color: var(--cor-principal);
   color: #fff;
   font-size: 14px;
   font-weight: 600;

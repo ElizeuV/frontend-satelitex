@@ -16,12 +16,12 @@
 
 .finalizado h1 {
   font-size: 1.6rem;
-  color: black;
+  color: var(--cor-quadriaria);
 }
 
 .finalizado a {
   text-decoration: none;
-  color: black;
+  color: var(--cor-quadriaria);
   font-size: 1.4rem;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .finalizado a:hover {
-  color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
   text-decoration: none;
   z-index: 3;
 }

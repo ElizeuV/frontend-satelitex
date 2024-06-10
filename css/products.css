@@ -6,7 +6,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: #e9e9e9;
+    background-color: var(--cor-secundaria);
 }
 
 /* .content::before {
@@ -22,10 +22,10 @@
 .img_box {
     width: 40%;
     min-height: 300px;
-    /* border: 1px solid black; */
-    border-radius: 3rem 0;
+    border-radius: 1rem;
     padding: 2rem 5rem;
     background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px var(--cor-quadriaria);
 }
 
 .img_box img {
@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: black;
+    color: var(--cor-quadriaria);
     gap: 1rem;
     height: 300px;
     font-weight: bold;
@@ -61,7 +61,7 @@
 }
 
 .add_to_cart a {
-    color: black;
+    color: var(--cor-quadriaria);
     text-decoration: none;
     transition: all 0.5s;
 }
@@ -86,6 +86,39 @@
 }
 
 .add_to_cart:hover a {
-    color: var(--cor-secundaria);
+    color: var(--cor-quadriaria);
     text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .img_box {
+        width: 50%;
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 100vw;
+        min-height: 80vh;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img_box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .img_box {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .img_box {
+        width: 100%;
+    }
 }

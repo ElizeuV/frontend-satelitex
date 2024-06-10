@@ -150,6 +150,7 @@ table {
   --cor-principal: #961d3a;
   --cor-secundaria: #f6f6f6;
   --cor-terciaria: #22d4fd;
+  --cor-quadriaria: black;
   --cor-hover: #272727;
 
   --fonte-primaria: 'Krona One', sans-serif;
@@ -170,6 +171,6 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: var(--cor-principal);
-  color: var(--cor-secundaria);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
 }

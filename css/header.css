@@ -5,6 +5,7 @@
   padding: 1% 0;
   flex-wrap: wrap;
   background-color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
   height: 15vh;
 }
 
@@ -40,7 +41,7 @@
 .header_title h1 {
   font-family: Nasa;
   font-size: 3rem;
-  color: black;
+  color: var(--cor-quadriaria);
   position: relative;
 }
 
@@ -83,13 +84,20 @@
   width: 100%;
 }
 
+.header_navigation_item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .header_navigation_item a {
   display: flex;
   text-decoration: none;
-  color: black;
+  color: var(--cor-quadriaria);
   font-family: var(--font-secundaria);
   font-size: 1.5rem;
   align-items: center;
+  padding-left: 0.6rem;
 }
 
 .header_navigation_item img {
@@ -97,7 +105,7 @@
   cursor: pointer;
 }
 
-.lista_desejo {
+/* .lista_desejo {
   background: url(../images/sacola-de-compra.png) no-repeat;
   padding-left: 27px;
 }
@@ -105,10 +113,14 @@
 .entrar {
   background: url(../images/usuario.png) no-repeat;
   padding-left: 27px;
-}
+} */
 
 .nav_bottom {
   display: none;
+}
+
+.fa-solid {
+  color: var(--cor-quadriaria);
 }
 
 @media screen and (max-width: 900px) {
@@ -124,7 +136,7 @@
   .header_title {
     position: absolute;
     top: 25%;
-    right: 10%;
+    right: 18%;
   }
 
   .button {
@@ -132,9 +144,9 @@
     outline: none;
   }
 
-  .button_open {
+  .button_open i {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 8%;
   }
 
@@ -146,6 +158,13 @@
 
   .header_navigation_item {
     display: none;
+  }
+
+  #nav-item {
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 5%;
   }
 
   .nav_bottom {
@@ -181,8 +200,8 @@
     top: 30%;
   }
 
-  .button_open {
-    top: 28%;
+  .button_open i {
+    top: 50%;
   }
 
   .header_title img {
@@ -204,13 +223,13 @@
     gap: 5%;
   }
 
-  .button {
-    transform: scale(0.7);
+  .button_open i {
+    top: 60%;
+    left: 5%;
   }
 
-  .button_open {
-    top: 20%;
-    left: 5%;
+  #nav-item {
+    top: 60%;
   }
 }
 

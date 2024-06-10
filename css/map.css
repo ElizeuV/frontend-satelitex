@@ -2,10 +2,15 @@
   background-color: var(--cor-principal);
   width: 100%;
   height: 100%;
+  margin-top: 5rem;
+}
+
+.map-dark {
+  filter: invert(90%);
 }
 
 .map_info h3 {
-  color: var(--cor-secundaria);
+  color: white;
   font-family: var(--font-secundaria);
   text-decoration: none;
   font-size: 1.5rem;

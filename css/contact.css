@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  position: relative;
 }
 
 .contact_info {
@@ -12,7 +13,7 @@
 }
 
 .contact_info h2, p{
-  color: var( --cor-secundaria);
+  color: white;
   text-align: center;
   padding: 5px;
 }
@@ -30,19 +31,87 @@
 }
 
 .contact input {
-  border: 1px solid var(--azul);
+  background-color: var(--cor-secundaria);
+  border: 1px solid var(--cor-quadriaria);
   border-radius: 24px;
   width: 40%;
-  color: var( --cor-principal);
+  color: var( --cor-quadriaria);
   height: 40px;
   padding-left: 1rem;
+  cursor: pointer;
+}
+
+#email {
+  position: absolute;
+  top: 44%;
+  left: 51%;
+  z-index: 2;
 }
 
 .contact input::placeholder {
-  background: url("../images/email.svg") no-repeat;
-  padding-left: 2em;
-  color: var( --cor-principal); 
+  padding-left: 2rem;
+  color: var( --cor-quadriaria); 
   font-family: var(--font-secundaria);
+}
+
+@media screen and (max-width: 1280px) {
+  #email {
+    left: 52%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #email {
+    left: 53%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #email {
+    left: 54.5%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #email {
+    left: 56%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #email {
+    left: 58%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #email {
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #email {
+    left: 62%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #email {
+    left: 64%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  #email {
+    left: 66%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #email {
+    left: 68%;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -52,5 +121,10 @@
 
   .contact input {
     width: 60%;
+  }
+
+  #email {
+    top: 74%;
+    left: 25%;
   }
 }

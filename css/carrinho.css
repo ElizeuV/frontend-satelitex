@@ -3,21 +3,23 @@
   flex-direction: column;
   padding: 2rem 3rem;
   background-color: var(--cor-secundaria);
-  color: black;
+  color: var(--cor-quadriaria);
 }
 
 .cart_produto {
   display: flex;
   min-height: 30vh;
   width: 90vw;
-  background-color: #e9e9e9;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  background-color: var(--cor-secundaria);
+  box-shadow: 0 0 5px var(--cor-quadriaria);
   padding: 0 3rem;
-  color: black;
+  color: var(--cor-quadriaria);
 }
 
 .product_image {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25vw;
 }
 
@@ -40,7 +42,7 @@
   position: absolute;
   bottom: 10%;
   right: 40%;
-  color: black;
+  color: var(--cor-quadriaria);
 }
 
 .product_price {
@@ -57,14 +59,15 @@
 .cart_garantia {
   display: flex;
   justify-content: center;
-  background-color: #e9e9e9;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  background-color: var(--cor-secundaria);
+  box-shadow: 0 0px 5px var(--cor-quadriaria);
   width: 60vw;
   margin: 1rem 0;
   position: relative;
   gap: 3rem;
   padding: 1rem 3rem;
   padding-top: 4rem;
+  color: var(--cor-quadriaria);
 }
 
 .garantia_title {
@@ -93,12 +96,13 @@
 .cart_frete {
   display: flex;
   flex-direction: column;
-  background-color: #e9e9e9;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  background-color: var(--cor-secundaria);
+  box-shadow: 0 0px 5px var(--cor-quadriaria);
   width: 29vw;
   margin: 1rem 0;
   padding: 3rem;
   gap: 0.5rem;
+  color: var(--cor-quadriaria);
 }
 
 .cart_frete span {
@@ -106,6 +110,8 @@
 }
 
 .cart_frete input {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
   border: 1px solid #aaa;
   height: 2rem;
   outline: none;
@@ -113,6 +119,8 @@
 }
 
 .cart_frete button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
   border: 1px solid #aaa;
   margin-top: 2rem;
   padding: 1rem;
@@ -145,7 +153,99 @@
 }
 
 .cart_frete button:hover {
-  color: var(--cor-secundaria);
+  color: var(--cor-quadriaria);
   text-decoration: none;
   z-index: 3;
+}
+
+@media screen and (max-width: 900px) {
+  .juntar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart_produto {
+    flex-direction: column;
+    width: 90vw;
+    min-height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .product_info {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #cart_check {
+    position: static;
+    bottom: -38%;
+    right: 32%;
+  }
+
+  .cart_garantia {
+    width: 90vw;
+  }
+
+  .cart_frete {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .cart_produto {
+    width: 85vw;
+  }
+
+  .product_image img {
+    width: 85%;
+  }
+
+  .cart_garantia {
+    width: 85vw;
+    flex-direction: column;
+  }
+
+  .garantia_title {
+    top: 5%;
+    left: 32%;
+  }
+
+  .garantia_box {
+    height: 15vh;
+  }
+
+  .cart_frete {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+   .product_image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .cart_produto {
+    width: 80vw;
+  }
+
+  .cart_garantia {
+    width: 80vw;
+  }
+
+  .garantia_title {
+    left: 28%;
+  }
+
+  .cart_frete {
+    width: 80vw;
+  }
+
+  .product_image img {
+    width: 100%;
+  }
 }
